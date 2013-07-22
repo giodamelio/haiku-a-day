@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= @document.title %></title>
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+            .current {
+                text-decoration: underline;
+            }
+        </style>
+        <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="/vendor/kalendae/kalendae.css" rel="stylesheet">
+
+        <script src="/vendor/jquery/jquery-1.10.2.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="/vendor/moment/moment.min.js"></script>
+        <script src="/vendor/kalendae/kalendae.min.js"></script>
+        <script src="/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="masthead">
+                <h1 class="muted" style="text-align: center;">Haiku A Day</h1>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="span10 offset1">
+                    <div class="lead">
+                        <%- @content %>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="span8 offset2"><h4 style="text-align: center">Pick a date</h4></div>
+            </div>
+            <div class="row">
+                <div class="span8 offset2" style="text-align: center;" id="date-selectors-parent">
+                    <a id="date-yesterday" style="cursor: pointer;" href="javascript:void(0)">Yesterday</a>
+                    <a id="date-today" style="margin-left: 10px; cursor: pointer;" class="current" href="javascript:void(0)">Today</a>
+                    <a id="date-custom" style="margin-left: 10px; cursor: pointer;" href="javascript:void(0)">Custom</a>
+                    <div id="kalendae-datepicker" style="display: none;"></div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="span10 offset1" id="haikuContainer">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
