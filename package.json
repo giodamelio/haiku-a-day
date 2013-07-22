@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "description": "A haiku a day.",
   "author": "Gio d'Amelio",
-  "repository" : {
+  "repository": {
     "type": "git",
-    "url" : "https://github.com/giodamelio/haiku-a-day.git"
+    "url": "https://github.com/giodamelio/haiku-a-day.git"
+  },
+  "dependencies": {
+    "kerouac": "0.0.3"
   }
 }
