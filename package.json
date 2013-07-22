@@ -8,12 +8,11 @@
     "url": "https://github.com/giodamelio/haiku-a-day.git"
   },
   "dependencies": {
-    "kerouac": "0.0.3",
-    "kerouac-robotstxt": "~0.1.0",
-    "kerouac-sitemap": "~0.1.1",
-    "ejs-locals": "~1.0.2",
-    "express": "~3.3.4",
-    "coffee-script": "~1.6.3",
-    "nodemon": "~0.7.8"
+    "docpad-plugin-eco": "~2.0.2",
+    "docpad-plugin-coffeescript": "~2.2.2",
+    "docpad-plugin-marked": "~2.1.1",
+    "docpad-plugin-partials": "~2.6.3",
+    "docpad-plugin-cleanurls": "~2.5.0",
+    "docpad": "~6.45.0"
   }
 }
