@@ -6,6 +6,7 @@ spawn = (cmd, options) ->
         process.stdout.write data.toString()
 
 coffeePath = "./node_modules/.bin/coffee"
+nodemonPath = "./node_modules/.bin/nodemon"
 
 task "gen", "Generate the site", ->
     spawn coffeePath, "site.coffee"
@@ -16,3 +17,7 @@ task "server", "Serve the output", ->
 task "both", "Generate and serve the output", ->
     invoke "gen"
     invoke "server"
+
+task "watch", "Auto-regenarate and serve the output", ->
+    invoke "server"
+    spawn nodemonPath, "-e '.coffee|.html|.md|.ejs site.coffee"

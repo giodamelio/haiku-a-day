@@ -13,6 +13,7 @@
     "kerouac-sitemap": "~0.1.1",
     "ejs-locals": "~1.0.2",
     "express": "~3.3.4",
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "nodemon": "~0.7.8"
   }
 }
