@@ -2,7 +2,7 @@
 <html>
     <head>
         <title><%= @document.title %></title>
-        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <style type="text/css">
             body {
                 padding-top: 20px;
@@ -12,14 +12,14 @@
                 text-decoration: underline;
             }
         </style>
-        <link href="/vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="/vendor/kalendae/kalendae.css" rel="stylesheet">
+        <link href="vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="vendor/kalendae/kalendae.css" rel="stylesheet">
 
-        <script src="/vendor/jquery/jquery-1.10.2.min.js"></script>
-        <script src="/vendor/bootstrap/js/bootstrap.js"></script>
-        <script src="/vendor/moment/moment.min.js"></script>
-        <script src="/vendor/kalendae/kalendae.min.js"></script>
-        <script src="/main.js"></script>
+        <script src="vendor/jquery/jquery-1.10.2.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/moment/moment.min.js"></script>
+        <script src="vendor/kalendae/kalendae.min.js"></script>
+        <script src="main.js"></script>
     </head>
     <body>
         <div class="container">
