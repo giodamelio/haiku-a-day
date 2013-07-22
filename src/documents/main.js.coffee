@@ -2,7 +2,11 @@ $(document).ready ->
     # Setup the haikus
 
     # Get todays
-    $("#haikuContainer").load "haikus/" + moment().format("MM-DD-YYYY")
+    $("#haikuContainer").load "haikus/" + moment().format("MM-DD-YYYY") + ".html", (response, status, xhr) ->
+        if status == "error"
+            err = $("<p style='text-align: center;'></p>")
+            err.html("<strong>No haiku for that day.</strong>")
+            $("#haikuContainer").append err
 
     # Handle the events
 
