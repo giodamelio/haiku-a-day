@@ -3,6 +3,4 @@ title: Hello World!
 layout: main
 ---
 
-# Hello World
-
-![Kitty](/kitten.jpg)
+I am trying to write one haiku a day. Here they are.
