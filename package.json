@@ -8,6 +8,8 @@
     "url": "https://github.com/giodamelio/haiku-a-day.git"
   },
   "dependencies": {
-    "kerouac": "0.0.3"
+    "kerouac": "0.0.3",
+    "kerouac-robotstxt": "~0.1.0",
+    "kerouac-sitemap": "~0.1.1"
   }
 }
