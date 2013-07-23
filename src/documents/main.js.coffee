@@ -12,7 +12,7 @@ $(document).ready ->
 
     # Today
     $("#date-today").click ->
-        $("#kalendae-datepicker").hide()
+        $("#kalendae-datepicker").hide("slow")
         $("#date-yesterday").removeClass "current"
         $("#date-custom").removeClass "current"
         $("#date-today").addClass "current"
@@ -25,7 +25,7 @@ $(document).ready ->
 
     # Yesterday
     $("#date-yesterday").click ->
-        $("#kalendae-datepicker").hide()
+        $("#kalendae-datepicker").hide("slow")
         $("#date-today").removeClass "current"
         $("#date-custom").removeClass "current"
         $("#date-yesterday").addClass "current"
@@ -37,7 +37,7 @@ $(document).ready ->
                 $("#haikuContainer").append err
 
     $("#date-custom").click ->
-        $("#kalendae-datepicker").show()
+        $("#kalendae-datepicker").show("slow")
         $("#date-today").removeClass "current"
         $("#date-yesterday").removeClass "current"
         $("#date-custom").addClass "current"
@@ -45,7 +45,7 @@ $(document).ready ->
     # Setup the datepicker
     datepicker = new Kalendae "kalendae-datepicker"
     datepicker.subscribe "change", (date, action) ->
-        $("#kalendae-datepicker").hide()
+        $("#kalendae-datepicker").hide("slow")
         $("#haikuContainer").html ""
         $("#haikuContainer").load "haikus/" + date.format("MM-DD-YYYY") + "/index.html", (response, status, xhr) ->
             if status == "error"
