@@ -11,9 +11,10 @@
     "docpad-plugin-eco": "~2.0.2",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-marked": "~2.1.1",
-    "docpad-plugin-partials": "~2.6.3",
-    "docpad": "~6.45.0",
+    "docpad-plugin-partials": "~2.7.0",
+    "docpad": "~6.46.2",
     "moment": "~2.1.0",
     "docpad-plugin-ghpages": "~2.2.0"
-  }
+  },
+  "devDependencies": {}
 }
