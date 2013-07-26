@@ -1,6 +1,6 @@
 # Haiku A Day
 
-I am trying to write one haiku a day. Here they are.
+I am trying to write one haiku a day. [Here](http://giodamelio.github.io/haiku-a-day/) they are.
 
 # Thanks
 
