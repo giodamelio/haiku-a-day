@@ -11,6 +11,14 @@
             .current {
                 text-decoration: underline;
             }
+            .pull-center {
+                text-align: center;
+            }
+            .boxsizingBorder {
+                -webkit-box-sizing: border-box;
+                   -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+            }
         </style>
         <link href="vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">

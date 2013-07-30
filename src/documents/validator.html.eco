@@ -1,0 +1,30 @@
+---
+layout: basic-bootstrap
+---
+<%- @getBlock("scripts").add("validator.js").toHTML() %>
+<div class="masthead">
+    <h1 class="muted" style="text-align: center;">Haiku Validator</h1>
+</div>
+<hr>
+<div class="row">
+    <div class="span10 offset1">
+        <div class="lead" style="text-align: center;">
+            A simple haiku validator
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span8 offset2 pull-center">
+        Just type your haiku below, and watch it validate in realtime
+    </div>
+    <div class="span8 offset2" style="margin-top: 10px;">
+        <textarea id="haikuInput" rows="5" style="width: 100%;"></textarea>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span8 offset2" style="text-align: center;">
+        <p>Created by <a href="https://github.com/giodamelio">Gio d'Amelio</a> with the help of a bunch of <a href="https://github.com/giodamelio/haiku-a-day#thanks">awesome FOSS projects</a>.</p>
+    </div>
+</div>

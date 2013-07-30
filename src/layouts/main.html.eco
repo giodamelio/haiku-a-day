@@ -43,6 +43,6 @@ layout: basic-bootstrap
 <hr>
 <div class="row">
     <div class="span8 offset2" style="text-align: center;">
-        <p>Created by <a href="https://github.com/giodamelio">Gio d"Amelio</a> with the help of a bunch of <a href="https://github.com/giodamelio/haiku-a-day#thanks">awesome FOSS projects</a>.</p>
+        <p>Created by <a href="https://github.com/giodamelio">Gio d'Amelio</a> with the help of a bunch of <a href="https://github.com/giodamelio/haiku-a-day#thanks">awesome FOSS projects</a>.</p>
     </div>
 </div>
