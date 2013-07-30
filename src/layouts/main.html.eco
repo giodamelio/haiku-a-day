@@ -1,66 +1,48 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title><%= @document.title %></title>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                padding-top: 20px;
-                padding-bottom: 40px;
-            }
-            .current {
-                text-decoration: underline;
-            }
-        </style>
-        <link href="vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="vendor/kalendae/kalendae.css" rel="stylesheet">
-
-        <script src="vendor/jquery/jquery-1.10.2.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.js"></script>
-        <script src="vendor/moment/moment.min.js"></script>
-        <script src="vendor/kalendae/kalendae.min.js"></script>
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="masthead">
-                <h1 class="muted" style="text-align: center;">Haiku A Day</h1>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span10 offset1">
-                    <div class="lead" style="text-align: center;">
-                        <%- @content %>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span8 offset2"><h4 style="text-align: center">Pick a date</h4></div>
-            </div>
-            <div class="row">
-                <div class="span8 offset2" style="text-align: center;" id="date-selectors-parent">
-                    <a id="date-yesterday" style="cursor: pointer;" href="javascript:void(0)">Yesterday</a>
-                    <a id="date-today" style="margin-left: 10px; cursor: pointer;" class="current" href="javascript:void(0)">Today</a>
-                    <a id="date-custom" style="margin-left: 10px; cursor: pointer;" href="javascript:void(0)">Custom</a>
-                    <div id="kalendae-datepicker" style="display: none;"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span10 offset1" id="haikuContainer">
-                </div>
-                <div class="span10 offset1" style="text-align: center;">
-                    <div id="loading" style="display: none;"><i class="icon-spinner icon-spin icon-large"></i></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span8 offset2" style="text-align: center;">
-                    <p>Created by <a href="https://github.com/giodamelio">Gio d'Amelio</a> with the help of a bunch of <a href="https://github.com/giodamelio/haiku-a-day#thanks">awesome FOSS projects</a>.</p>
-                </div>
-            </div>
+---
+layout: basic-bootstrap
+---
+<%- @getBlock("scripts").add("main.js").toHTML() %>
+<div class="masthead">
+    <h1 class="muted" style="text-align: center;">Haiku A Day</h1>
+</div>
+<div class="row">
+    <div class="span10 offset1">
+        <div style="text-align: center;">
+            <a href="validator">Haiku Validator</a>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span10 offset1">
+        <div class="lead" style="text-align: center;">
+            <%- @content %>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span8 offset2"><h4 style="text-align: center">Pick a date</h4></div>
+</div>
+<div class="row">
+    <div class="span8 offset2" style="text-align: center;" id="date-selectors-parent">
+        <a id="date-yesterday" style="cursor: pointer;" href="javascript:void(0)">Yesterday</a>
+        <a id="date-today" style="margin-left: 10px; cursor: pointer;" class="current" href="javascript:void(0)">Today</a>
+        <a id="date-custom" style="margin-left: 10px; cursor: pointer;" href="javascript:void(0)">Custom</a>
+        <div id="kalendae-datepicker" style="display: none;"></div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span10 offset1" id="haikuContainer">
+    </div>
+    <div class="span10 offset1" style="text-align: center;">
+        <div id="loading" style="display: none;"><i class="icon-spinner icon-spin icon-large"></i></div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="span8 offset2" style="text-align: center;">
+        <p>Created by <a href="https://github.com/giodamelio">Gio d"Amelio</a> with the help of a bunch of <a href="https://github.com/giodamelio/haiku-a-day#thanks">awesome FOSS projects</a>.</p>
+    </div>
+</div>

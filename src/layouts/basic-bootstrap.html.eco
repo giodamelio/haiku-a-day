@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= @document.title %></title>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+            body {
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+            .current {
+                text-decoration: underline;
+            }
+        </style>
+        <link href="vendor/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="vendor/kalendae/kalendae.css" rel="stylesheet">
+
+        <script src="vendor/jquery/jquery-1.10.2.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/moment/moment.min.js"></script>
+        <script src="vendor/kalendae/kalendae.min.js"></script>
+
+        <%- @getBlock("scripts").toHTML() %>
+    </head>
+    <body>
+        <div class="container">
+            <%- @content %>
+        </div>
+    </body>
+</html>
