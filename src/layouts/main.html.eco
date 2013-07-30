@@ -50,6 +50,9 @@
             <div class="row">
                 <div class="span10 offset1" id="haikuContainer">
                 </div>
+                <div class="span10 offset1" style="text-align: center;">
+                    <div id="loading" style="display: none;">Loading...</div>
+                </div>
             </div>
             <hr>
             <div class="row">
