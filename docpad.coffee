@@ -3,6 +3,11 @@
 
 # Define the DocPad Configuration
 docpadConfig = 
+    environments:
+        static:
+            plugins:
+                livereload:
+                    enabled: true
     templateData:
         formatDate: (dateString) ->
             moment = require "moment"

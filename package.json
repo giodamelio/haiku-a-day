@@ -14,7 +14,8 @@
     "docpad-plugin-partials": "~2.7.0",
     "docpad": "~6.46.2",
     "moment": "~2.1.0",
-    "docpad-plugin-ghpages": "~2.2.0"
+    "docpad-plugin-ghpages": "~2.2.0",
+    "docpad-plugin-livereload": "~2.4.0"
   },
   "devDependencies": {}
 }
