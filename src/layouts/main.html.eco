@@ -1,7 +1,9 @@
 ---
 layout: basic-bootstrap
 ---
-<%- @getBlock("scripts").add("main.js").toHTML() %>
+<script src="vendor/moment/moment.min.js"></script>
+<script src="vendor/kalendae/kalendae.min.js"></script>
+<script src="main.js"></script>
 <div class="masthead">
     <h1 class="muted" style="text-align: center;">Haiku A Day</h1>
 </div>

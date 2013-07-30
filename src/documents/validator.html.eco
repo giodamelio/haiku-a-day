@@ -1,7 +1,9 @@
 ---
 layout: basic-bootstrap
+title: Haiku Validator
 ---
-<%- @getBlock("scripts").add("validator.js").toHTML() %>
+<script src="vendor/codemirror/codemirror.js"></script>
+<script src="validator.js"></script>
 <div class="masthead">
     <h1 class="muted" style="text-align: center;">Haiku Validator</h1>
 </div>
@@ -18,8 +20,7 @@ layout: basic-bootstrap
     <div class="span8 offset2 pull-center">
         Just type your haiku below, and watch it validate in realtime
     </div>
-    <div class="span8 offset2" style="margin-top: 10px;">
-        <textarea id="haikuInput" rows="5" style="width: 100%;"></textarea>
+    <div id="haikuContainer" class="span8 offset2" style="margin-top: 10px; border: 1px solid black;">
     </div>
 </div>
 <hr>

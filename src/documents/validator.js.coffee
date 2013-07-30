@@ -1,8 +1,20 @@
+getSyllableCount = (word, callback) ->
+    $.ajax
+        url: "http://rhymebrain.com/talk?function=getWordInfo&word=hello"
+        dataType: "json"
+        success: (data, textStatus, XHR) ->
+            callback data.syllables
+
+
 $(document).ready ->
+    cm = CodeMirror($("#haikuContainer").get(0))
+
+    cm.addLineClass 1, "background", "red"
+
+    getSyllableCount "golden", (syllables) ->
+        console.log syllables
+
     # Limit the rows to 3
-    $("#haikuInput").keydown (e) ->
-        if e.keyCode == 13
-            if $(this).val().split("\n").length >= 3
-                return false
-            else
-                return true
+    cm.on "beforeChange", (cmi, change) ->
+        if cm.lineCount() > 3
+            change.cancel()
