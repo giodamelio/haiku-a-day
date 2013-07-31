@@ -7,13 +7,13 @@ layout: basic-bootstrap
 <div class="masthead">
     <h1 class="muted" style="text-align: center;">Haiku A Day</h1>
 </div>
-<div class="row">
+<!-- <div class="row">
     <div class="span10 offset1">
         <div style="text-align: center;">
             <a href="validator">Haiku Validator</a>
         </div>
     </div>
-</div>
+</div> -->
 <hr>
 <div class="row">
     <div class="span10 offset1">
