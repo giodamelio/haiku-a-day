@@ -12,6 +12,8 @@ docpadConfig =
         formatDate: (dateString) ->
             moment = require "moment"
             return moment(dateString).format("MM-DD-YYYY")
+        getCount: () ->
+            return @getCollection("documents").findAll(relativePath: $startsWith: "haikus/").length
     events:
         serverExtend: (opts) ->
             # Simulate a bit of load time for testing
