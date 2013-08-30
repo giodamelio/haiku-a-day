@@ -14,6 +14,12 @@ docpadConfig =
             return moment(dateString).format("MM-DD-YYYY")
         getCount: () ->
             return @getCollection("documents").findAll(relativePath: $startsWith: "haikus/").length
+        daysSinceTheBeginning: ->
+            moment = require "moment"
+            return moment().diff(moment("20130722", "YYYYMMDD"), "days")
+        successPercent: ->
+            return ((@getCount() / @daysSinceTheBeginning()) * 100).toFixed(2) + "%"
+
     events:
         serverExtend: (opts) ->
             # Simulate a bit of load time for testing
